@@ -1,5 +1,5 @@
-name = input("Введите ваше имя: ")
-age = int(input("Введите ваш возраст: "))
-city = input("Введите город в котором живете: ")
+test_list = [2, 'text', 456, 45.3, True, [1, 2], ("pop, sort"), {"a", "b"}, {
+    "a": 1, "b": 2}, None]
 
-print(f"Имя: {name}; Возраст: {age}; Проживает в городе: {city};")
+for el in test_list:
+    print(type(el))

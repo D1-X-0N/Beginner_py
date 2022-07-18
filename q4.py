@@ -1,10 +1,9 @@
-num = int(input("Введите число: "))
+user_str = input("Введите строку: ")
 
-result = 0
+user_list = user_str.split()
 
-while num:
-    if num % 10 > result:
-        result = num % 10
-    num //= 10
-
-print(result)
+for i, v in enumerate(user_list, 1):
+    if len(v) > 20:
+        print(f"{i}) {v[:10]}...")
+    else:
+        print(f"{i}) {v}")
